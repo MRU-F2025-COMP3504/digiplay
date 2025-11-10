@@ -23,5 +23,9 @@ describe('Arithmetic Functions', () => {
         expect(division(10, 2)).toBe(5);
         expect(division(-10, 2)).toBe(-5);
     });
+
+    test('divids by zero throws error', () => {
+        expect(() => division(5, 0)).toThrow("Cannot divide by zero!");
+    });
   
 });
