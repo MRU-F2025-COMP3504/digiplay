@@ -1,7 +1,13 @@
 // https://archive.jestjs.io/docs/en/22.x/getting-started
 
-const sum = require('./sum');
+const calculator = require('./sum');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+test('test adding method', () => {
+  expect(calculator.add(1, 2)).toBe(3);
+  expect(calculator.add(2, -2)).toBe(0);
+});
+
+test('test multiplication method', () => {
+  expect(calculator.multiplication(2, -2)).toBe(-4);
+  expect(calculator.multiplication(-2, -2)).toBe(4);
 });
