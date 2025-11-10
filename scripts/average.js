@@ -1,7 +1,6 @@
 // Average of the absolute values of an array of numbers
 function averageAbs(numbers) {
     // We expect the array to be non-null and non-empty
-    console.log("numbers " + numbers);
     if (numbers === null) {
         throw new Error("Array numbers must not be null.");
     }
